@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter_24pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter_24pt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter_24pt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --white: #FFFFFF;
+    --grey: #2E363E;
+    --ligth-grey: #F2F6FA;
+    --orange: #FED84C;
+    --dark-grey: #434B53;
+    --ligth-blue-grey: #F2F6FA;
+    --black: #161616;
+    --red: #FF6B6B;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+}
+
+input {
+    border: none;
+    font-family: inherit;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    color: var(--white);
+}
+
+.header__container {
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.43;
+}
+
+.header__contacts {
+    display: flex;
+    column-gap: 69px;
+    font-style: normal;
+    align-items: center;
+}
+
+.header__address {
+    max-width: 151px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.header__telephone {
+    max-width: 231px;
+    display: flex;
+    flex-direction: column;
+}
+
+.telephone {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.52;
+}
+
+.telephone__caption {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.header__card {
+    position: relative;;
+    width: 50px;
+    height: 50px;
+}
+
+.header__card-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--orange);
+    color: var(--dark-grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    min-height: 100svh;
+    width: 100%;
+    background-image: url("./assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__container {
+    max-width: 1210px;
+    padding: 0 15px;
+    padding-top: 317px;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+.hero__caption {
+    width: fit-content;
+    padding: 10px 18px;
+    margin-bottom: 24px;
+    background-color: var(--ligth-grey);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 10%;
+    color: var(--grey);
+}
+
+.hero__title {
+    max-width: 647px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1px;
+}
+
+.hero__description {
+    max-width: 544px;
+    margin-bottom: 40px;
+    font-weight: 24px;
+    line-height: 1.43;
+}
+
+.hero__button {
+    display: flex;
+}
+
+.hero__button-link {
+    padding: 30px 50px;
+    margin-right: 20px;
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.52;
+}
+
+.hero__button-caption {
+    font-size: 15px;
+    line-height: 1.6;
+    align-self: center;
+}
+
+.products {
+    padding-top: 30px;
+}
+
+.products__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+    max-width: 1210px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.products__title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1px;
+}
+
+.products__search {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--grey);
+}
+
+.products__card {
+    max-width: 380px;
+
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card_img {
+    max-width: 380px;
+    max-height: 245px;
+}
+
+.card__content {
+    padding: 50px 44px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ligth-blue-grey);
+}
+
+.card__title {
+    margin-bottom: 12px;
+    color: var(--grey);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.43;
+}
+
+.card__description {
+    margin-bottom: 24px;
+    max-width: 240px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--grey);
+}
+
+.card__price {
+    margin-bottom: 14px;
+    max-width: 240px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--dark-grey);
+}
+
+.order__button {
+    width: fit-content;
+    padding: 20px 40px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    color: var(--grey);
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__counter { 
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.count__button {
+    padding: 10px 20px;
+    background-color: var(--orange);
+}
+
+
+.payment__form {
+    max-width: 550px;
+    margin: 150px auto;
+    padding: 24px;
+    display: flex;
+    row-gap: 12px;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: var(--black);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.payment__back-link {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.payment__title {
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.card__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.card__block input {
+    padding: 14px 16px;
+    border-radius: 4px;
+    color: var(--dark-grey);
+}
+
+.card__block label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.payment__button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.form__error {
+    color: var(--red);
+    font-size: 12px;
+}
