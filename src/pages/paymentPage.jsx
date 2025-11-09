@@ -1,11 +1,11 @@
 import PaymentForm from "../components/layout/paymentForm";
 
 const PaymentPage = () => {
-  return (
-    <>
-      <PaymentForm />
-    </>
-  );
+    return (
+        <>
+            <PaymentForm />
+        </>
+    );
 };
 
 export default PaymentPage;
