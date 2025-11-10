@@ -1,7 +1,7 @@
 import * as yup from "yup";
 import backImg from "../../assets/images/back.png";
 import { Link } from "react-router";
-import FormBlock from "../ui/formBlock";
+import FormBlock from "../ui/FormBlock";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 

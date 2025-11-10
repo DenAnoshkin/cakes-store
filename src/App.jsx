@@ -1,6 +1,6 @@
-import MainPage from "./pages/mainPage";
-import PaymentPage from "./pages/paymentPage";
-import NotFoundPage from "./pages/notFoundPage";
+import MainPage from "./pages/MainPage";
+import PaymentPage from "./pages/PaymentPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import "./index.css";
 import { Route, Routes } from "react-router";
 
