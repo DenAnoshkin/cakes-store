@@ -3,11 +3,11 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router";
 
 const Header = () => {
-    const productQuantity = useSelector( ( state ) => {
-        return state.cakes.entities.reduce( ( acc, cake ) => {
+    const productQuantity = useSelector((state) => {
+        return state.cakes.entities.reduce((acc, cake) => {
             return cake.count === 0 ? acc + 0 : acc + 1;
-        }, 0 );
-    } );
+        }, 0);
+    });
     return (
         <header className="header">
             <div className="header__container">
@@ -30,7 +30,9 @@ const Header = () => {
                 <Link to="/payment" className="header__card">
                     <img src={cardImg} alt="Корзина" />
                     {productQuantity !== 0 ? (
-                        <span className="header__card-count">{productQuantity}</span>
+                        <span className="header__card-count">
+                            {productQuantity}
+                        </span>
                     ) : null}
                 </Link>
             </div>

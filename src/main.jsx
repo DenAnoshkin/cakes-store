@@ -6,16 +6,16 @@ import store from "./redux/store.js";
 import { BrowserRouter } from "react-router";
 
 async function enableMocking() {
-    if ( import.meta.env.PROD ) {
+    if (import.meta.env.PROD) {
         return;
     }
 
-    const { worker } = await import( "./services/mocks/browser.js" );
+    const { worker } = await import("./services/mocks/browser.js");
     return worker.start();
 }
 
-enableMocking().then( () => {
-    createRoot( document.getElementById( "root" ) ).render(
+enableMocking().then(() => {
+    createRoot(document.getElementById("root")).render(
         <StrictMode>
             <Provider store={store}>
                 <BrowserRouter>
@@ -24,4 +24,4 @@ enableMocking().then( () => {
             </Provider>
         </StrictMode>
     );
-} );
+});

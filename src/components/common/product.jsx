@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import cardImg from "../../assets/images/card-img.png";
 import { changeCakesQuantity } from "../../redux/slices/cakesSlice";
 
-const Product = ( { id, name, description, price, count } ) => {
+const Product = ({ id, name, description, price, count }) => {
     const dispatch = useDispatch();
     return (
         <div className="products__card">
@@ -14,7 +14,7 @@ const Product = ( { id, name, description, price, count } ) => {
                 <div className="card__buttons">
                     <button
                         className="order__button"
-                        onClick={() => dispatch( changeCakesQuantity( id, 1 ) )}
+                        onClick={() => dispatch(changeCakesQuantity(id, 1))}
                     >
                         Заказать
                     </button>
@@ -22,14 +22,20 @@ const Product = ( { id, name, description, price, count } ) => {
                         <div className="product__counter">
                             <button
                                 className="count__button"
-                                onClick={() => dispatch( changeCakesQuantity( id, 1 ) )}
+                                onClick={() =>
+                                    dispatch(changeCakesQuantity(id, 1))
+                                }
                             >
                                 +
                             </button>
-                            <span className="card__buttons-counter">{count}</span>
+                            <span className="card__buttons-counter">
+                                {count}
+                            </span>
                             <button
                                 className="count__button"
-                                onClick={() => dispatch( changeCakesQuantity( id, -1 ) )}
+                                onClick={() =>
+                                    dispatch(changeCakesQuantity(id, -1))
+                                }
                             >
                                 -
                             </button>

@@ -4,7 +4,8 @@ const Hero = () => {
             <div className="hero__container">
                 <p className="hero__caption">вкуснейшие</p>
                 <h1 className="hero__title">
-                    Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу
+                    Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт
+                    Петербургу
                 </h1>
                 <p className="hero__description">
                     Приготовим за 3 часа в день заказа.

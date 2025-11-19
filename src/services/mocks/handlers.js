@@ -1,13 +1,14 @@
-import { delay, http, HttpResponse } from 'msw';
+import { delay, http, HttpResponse } from "msw";
 
 export const handlers = [
-    http.get( '/api/posts', async () => {
-        await delay( 1500 );
-        return HttpResponse.json( [
+    http.get("/api/posts", async () => {
+        await delay(1500);
+        return HttpResponse.json([
             {
                 id: 1,
                 name: "Кремовый замок",
-                description: "Нежный крем любого цвета на выбор, вафельная основа",
+                description:
+                    "Нежный крем любого цвета на выбор, вафельная основа",
                 price: 150,
                 count: 0,
             },
@@ -28,14 +29,16 @@ export const handlers = [
             {
                 id: 4,
                 name: "Шоколадный мир",
-                description: "Ореховая стружка, нежный крем и шоколадная основа",
+                description:
+                    "Ореховая стружка, нежный крем и шоколадная основа",
                 price: 150,
                 count: 0,
             },
             {
                 id: 5,
                 name: "Слезы дракона",
-                description: "Нежный крем любого цвета на выбор, вафельная основа",
+                description:
+                    "Нежный крем любого цвета на выбор, вафельная основа",
                 price: 150,
                 count: 0,
             },
@@ -46,6 +49,6 @@ export const handlers = [
                 price: 150,
                 count: 0,
             },
-        ] );
-    } ),
+        ]);
+    }),
 ];
