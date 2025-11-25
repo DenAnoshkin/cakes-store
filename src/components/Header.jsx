@@ -1,4 +1,4 @@
-import cardImg from "../../assets/images/card.png";
+import cardImg from "../assets/images/card.png";
 import { useSelector } from "react-redux";
 import { Link } from "react-router";
 

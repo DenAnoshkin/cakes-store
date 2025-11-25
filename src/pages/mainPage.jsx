@@ -1,6 +1,6 @@
-import Header from "../components/layout/Header";
-import Hero from "../components/layout/Hero";
-import ProductList from "../features/products/ProductList";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import ProductList from "../components/ProductList";
 
 const MainPage = () => {
     return (

@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import cardImg from "../../assets/images/card-img.png";
-import { changeCakesQuantity } from "../../redux/slices/cakesSlice";
+import cardImg from "../assets/images/card-img.png";
+import { changeCakesQuantity } from "../redux/slices/cakesSlice";
 
 const Product = ({ id, name, description, price, count }) => {
     const dispatch = useDispatch();

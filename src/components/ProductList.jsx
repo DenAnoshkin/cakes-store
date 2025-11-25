@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-import Product from "../../components/common/product";
-import SearchBar from "../../components/ui/SearchBar";
+import Product from "./product";
+import SearchBar from "./ui/SearchBar";
 import { useState, useEffect } from "react";
-import { getCakes } from "../../redux/slices/cakesSlice";
+import { getCakes } from "../redux/slices/cakesSlice";
 
 const ProductList = () => {
     const [searchCake, setSearchCake] = useState("");
